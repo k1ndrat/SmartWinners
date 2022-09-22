@@ -141,6 +141,28 @@ h6 {
      object-fit: contain;
 }
 
+.button {
+  display: inline-block;
+  background-color: #f7d300;
+  border-radius: 0.5rem;
+  padding: 0.375rem 3.1875rem 0.375rem 3.3125rem;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 150%;
+}
+
+.red-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 0.65625rem 0rem;
+  /* identical to box height, or 133% */
+  text-align: center;
+  border-radius: 0.5rem;
+  background-color: #f30000;
+  color: #ffffff;
+}
+
 .header__container {
   padding-top: 0.9375rem;
   display: -webkit-box;
@@ -477,6 +499,274 @@ h6 {
   min-height: 3.1875rem;
 }
 
+.lottery-page__title {
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.lottery-page__title:not(:last-child) {
+  margin-bottom: 1.875rem;
+}
+
+.lottery-page__items {
+  padding: 0 0.9375rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(18.75rem, 23.75rem))[3];
+  grid-template-columns: repeat(3, minmax(18.75rem, 23.75rem));
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0.625rem;
+}
+
+.lottery-page__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 0.0625rem solid #e0e0e0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.lottery-page__item:nth-child(1) .lottery-item__img {
+  max-width: 4.504375rem;
+}
+
+.lottery-page__item:nth-child(2) .lottery-item__img {
+  max-width: 5.45rem;
+}
+
+.lottery-page__item:nth-child(3) .lottery-item__img {
+  max-width: 4.3125rem;
+}
+
+.lottery-item__white-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 0.625rem;
+     -moz-column-gap: 0.625rem;
+          column-gap: 0.625rem;
+  padding: 0.26875rem 2.39375rem 0.266875rem 1.706875rem;
+}
+
+.lottery-item__image {
+  border: 2px solid #e0e0e0;
+  border-radius: 50%;
+  height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.lottery-item__img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.lottery-item__subblock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.90625rem;
+}
+
+.lottery-item__country {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.625rem;
+}
+
+.lottery-item__country span {
+  font-weight: 500;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+.lottery-item__flag {
+  max-width: 1.25rem;
+}
+
+.lottery-item__price {
+  white-space: nowrap;
+  font-weight: 700;
+  line-height: 1.375rem;
+  color: #13902a;
+}
+
+.lottery-item__blue-block {
+  background-color: #0061a3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.lottery-item__timer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.25rem;
+}
+
+.lottery-item__timer span {
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1;
+  color: #fff;
+  /* identical to box height, or 100% */
+}
+
+.onlottery-page__content {
+  padding: 0rem 0.9375rem;
+}
+
+.onlottery-page__items {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9.6875rem, 13rem));
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0.625rem;
+  padding: 0rem 2.1875rem;
+}
+
+.onlottery-page__item {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.onlottery-page__link-block {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  padding-right: 2.1875rem;
+}
+
+.onlottery-page__link {
+  font-weight: 500;
+  line-height: 133%;
+  text-decoration-line: underline !important;
+  color: #0061a3;
+}
+
+.onlottery-item__star {
+  position: absolute;
+  right: 1.0625rem;
+  top: 0.5625rem;
+}
+
+.onlottery-item__image {
+  width: 5.875rem;
+  height: 5.875rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.onlottery-item__image:not(:last-child) {
+  margin-bottom: 1.75rem;
+}
+
+.onlottery-item__country {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.1875rem;
+}
+
+.onlottery-item__country span {
+  font-weight: 500;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+.onlottery-item__country:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.onlottery-item__price {
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.onlottery-item__price:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.onlottery-item__timer {
+  height: 1.125rem;
+}
+
+.onlottery-item__timer span {
+  font-weight: 500;
+  line-height: 112%;
+  color: #0061a3;
+}
+
 @media (min-width: 23.375em) {
   .item__title {
     font-size: 1rem;
@@ -526,9 +816,121 @@ h6 {
   .banner-page__items {
     margin-top: 1.875rem;
   }
+
+  .lottery-page__container {
+    padding-top: 4.6875rem;
+  }
+
+  .lottery-page__title {
+    font-size: 1.5rem;
+  }
+
+  .lottery-page__title:not(:last-child) {
+    margin-bottom: 1.875rem;
+  }
+
+  .lottery-item__white-block {
+    padding-left: 1.706875rem;
+  }
+
+  .lottery-item__white-block {
+    padding-right: 2.39375rem;
+  }
+
+  .lottery-item__image {
+    width: 8.8125rem;
+  }
+
+  .lottery-item__price {
+    font-size: 1.625rem;
+  }
+
+  .lottery-item__blue-block {
+    padding-top: 0.839375rem;
+  }
+
+  .lottery-item__blue-block {
+    padding-right: 4.50625rem;
+  }
+
+  .lottery-item__blue-block {
+    padding-bottom: 0.5625rem;
+  }
+
+  .lottery-item__blue-block {
+    padding-left: 0.765625rem;
+  }
+
+  .onlottery-page__container {
+    padding-top: 4.6875rem;
+  }
+
+  .onlottery-page__title:not(:last-child) {
+    margin-bottom: 0.9375rem;
+  }
+
+  .onlottery-page__items:not(:last-child) {
+    margin-bottom: 0.9375rem;
+  }
+
+  .onlottery-page__item {
+    padding-bottom: 0.75rem;
+  }
+
+  .onlottery-page__item {
+    padding-top: 0.6875rem;
+  }
+
+  .onlottery-page__item {
+    padding-left: 0.75rem;
+  }
+
+  .onlottery-page__item {
+    padding-right: 0.75rem;
+  }
+
+  .onlottery-page__link {
+    font-size: 1.125rem;
+  }
+
+  .onlottery-item__image {
+    width: 5.875rem;
+  }
+
+  .onlottery-item__image {
+    height: 5.875rem;
+  }
+
+  .onlottery-item__image:not(:last-child) {
+    margin-bottom: 1.75rem;
+  }
+
+  .onlottery-item__img {
+    width: 4.94875rem;
+  }
+
+  .onlottery-item__country span {
+    font-size: 0.875rem;
+  }
+
+  .onlottery-item__price {
+    font-size: 1.25rem;
+  }
+
+  .onlottery-item__timer span {
+    font-size: 1rem;
+  }
+
+  .onlottery-item__timer:not(:last-child) {
+    margin-bottom: 0.75rem;
+  }
 }
 
 @media (max-width: 48em) {
+  .button {
+    padding: 0.3125rem 2.375rem 0.3125rem 2.4375rem;
+  }
+
   .header__container {
     gap: 0.25rem;
   }
@@ -741,6 +1143,17 @@ h6 {
   .banner-page__item {
     padding-right: 0.4375rem;
   }
+
+  .lottery-page__items {
+    -ms-grid-columns: (minmax(18rem, 1fr))[1] !important;
+    grid-template-columns: repeat(1, minmax(18rem, 1fr)) !important;
+    padding: 0;
+    gap: 0.9375rem;
+  }
+
+  .onlottery-page__content {
+    padding: 0rem;
+  }
 }
 
 @media (max-width: 48em) and (max-width: 20em) {
@@ -759,6 +1172,23 @@ h6 {
   }
 }
 
+@media (max-width: 25em) {
+  .onlottery-page__items {
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(9.6875rem, 1fr)) !important;
+    padding: 0rem 0.53125rem;
+  }
+
+  .onlottery-item__star {
+    right: 0.4375rem;
+    top: 0.4375rem;
+  }
+
+  .onlottery-item__button {
+    padding: 0.375rem 2.25rem;
+  }
+}
+
 @media (max-width: 20em) {
   .item__title {
     font-size: 0.875rem;
@@ -769,6 +1199,22 @@ h6 {
   .banner-page__items {
     -ms-grid-columns: (minmax(18.75rem, 1fr))[2];
     grid-template-columns: repeat(2, minmax(18.75rem, 1fr));
+  }
+
+  .lottery-page__items {
+    -ms-grid-columns: (minmax(18.75rem, 1fr))[2];
+    grid-template-columns: repeat(2, minmax(18.75rem, 1fr));
+  }
+}
+
+@media (max-width: 48.4375em) {
+  .onlottery-page__items {
+    grid-template-columns: repeat(auto-fill, minmax(10.625rem, 1fr));
+    padding: 0rem 0.53125rem;
+  }
+
+  .onlottery-page__link-block {
+    padding-right: 0.53125rem;
   }
 }
 
@@ -787,6 +1233,129 @@ h6 {
 
   .banner-page__items {
     margin-top: 1rem;
+  }
+
+  .lottery-page__container {
+    padding-top: 2rem;
+  }
+
+  .lottery-page__title {
+    font-size: 1.125rem;
+  }
+
+  .lottery-page__title:not(:last-child) {
+    margin-bottom: 1.125rem;
+  }
+
+  .lottery-item__white-block {
+    padding-left: 1.46rem;
+  }
+
+  .lottery-item__white-block {
+    padding-right: 1.39rem;
+  }
+
+  .lottery-item__image {
+    width: 7.641875rem;
+  }
+
+  .lottery-item__price {
+    font-size: 1.5rem;
+  }
+
+  .lottery-item__blue-block {
+    padding-top: 0.901875rem;
+  }
+
+  .lottery-item__blue-block {
+    padding-right: 3.138125rem;
+  }
+
+  .lottery-item__blue-block {
+    padding-bottom: 0.6875rem;
+  }
+
+  .lottery-item__blue-block {
+    padding-left: 0.9375rem;
+  }
+
+  .onlottery-page__container {
+    padding-top: 2rem;
+  }
+
+  .onlottery-page__title:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  .onlottery-page__items:not(:last-child) {
+    margin-bottom: 0.75rem;
+  }
+
+  .onlottery-page__item {
+    padding-bottom: 0.5625rem;
+  }
+
+  .onlottery-page__item {
+    padding-top: 1rem;
+  }
+
+  .onlottery-page__item {
+    padding-left: 0.4375rem;
+  }
+
+  .onlottery-page__item {
+    padding-right: 0.4375rem;
+  }
+
+  .onlottery-page__link {
+    font-size: 1rem;
+  }
+
+  .onlottery-item__image {
+    width: 5.0625rem;
+  }
+
+  .onlottery-item__image {
+    height: 4.875rem;
+  }
+
+  .onlottery-item__image:not(:last-child) {
+    margin-bottom: 0.75rem;
+  }
+
+  .onlottery-item__img {
+    width: 4.174375rem;
+  }
+
+  .onlottery-item__country span {
+    font-size: 0.75rem;
+  }
+
+  .onlottery-item__price {
+    font-size: 1.125rem;
+  }
+
+  .onlottery-item__timer span {
+    font-size: 0.875rem;
+  }
+
+  .onlottery-item__timer:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 23.125em) {
+  .lottery-item__white-block {
+    padding-left: 0.3125rem;
+    padding-right: 0.9375rem;
+    -webkit-column-gap: 0.3125rem;
+       -moz-column-gap: 0.3125rem;
+            column-gap: 0.3125rem;
+  }
+
+  .lottery-item__blue-block {
+    gap: 1.25rem;
+    padding-right: 1.25rem;
   }
 }
 
@@ -830,6 +1399,330 @@ h6 {
 @supports not (margin-top: clamp( 1rem , 0.6022727273rem  +  1.696969697vw , 1.875rem )) {
     .banner-page__items {
       margin-top: calc(1rem + 0.875 * (100vw - 23.4375rem) / 51.5625);
+    }
+}
+
+@supports (padding-top: clamp( 2rem , 0.7784090909rem  +  5.2121212121vw , 4.6875rem )) {
+    .lottery-page__container {
+      padding-top: clamp( 2rem , 0.7784090909rem  +  5.2121212121vw , 4.6875rem );
+    }
+}
+
+@supports not (padding-top: clamp( 2rem , 0.7784090909rem  +  5.2121212121vw , 4.6875rem )) {
+    .lottery-page__container {
+      padding-top: calc(2rem + 2.6875 * (100vw - 23.4375rem) / 51.5625);
+    }
+}
+
+@supports (font-size: clamp( 1.125rem , 0.9545454545rem  +  0.7272727273vw , 1.5rem )) {
+    .lottery-page__title {
+      font-size: clamp( 1.125rem , 0.9545454545rem  +  0.7272727273vw , 1.5rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.125rem , 0.9545454545rem  +  0.7272727273vw , 1.5rem )) {
+    .lottery-page__title {
+      font-size: calc(1.125rem + 0.375 * (100vw - 23.4375rem) / 51.5625);
+    }
+}
+
+@supports (margin-bottom: clamp( 1.125rem , 0.7840909091rem  +  1.4545454545vw , 1.875rem )) {
+    .lottery-page__title:not(:last-child) {
+      margin-bottom: clamp( 1.125rem , 0.7840909091rem  +  1.4545454545vw , 1.875rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 1.125rem , 0.7840909091rem  +  1.4545454545vw , 1.875rem )) {
+    .lottery-page__title:not(:last-child) {
+      margin-bottom: calc(1.125rem + 0.75 * (100vw - 23.4375rem) / 51.5625);
+    }
+}
+
+@supports (padding-left: clamp( 1.46rem , 1.3477840909rem  +  0.4787878788vw , 1.706875rem )) {
+    .lottery-item__white-block {
+      padding-left: clamp( 1.46rem , 1.3477840909rem  +  0.4787878788vw , 1.706875rem );
+    }
+}
+
+@supports not (padding-left: clamp( 1.46rem , 1.3477840909rem  +  0.4787878788vw , 1.706875rem )) {
+    .lottery-item__white-block {
+      padding-left: calc(1.46rem + 0.246875 * (100vw - 23.4375rem) / 51.5625);
+    }
+}
+
+@supports (padding-right: clamp( 1.39rem , 0.93375rem  +  1.9466666667vw , 2.39375rem )) {
+    .lottery-item__white-block {
+      padding-right: clamp( 1.39rem , 0.93375rem  +  1.9466666667vw , 2.39375rem );
+    }
+}
+
+@supports not (padding-right: clamp( 1.39rem , 0.93375rem  +  1.9466666667vw , 2.39375rem )) {
+    .lottery-item__white-block {
+      padding-right: calc(1.39rem + 1.00375 * (100vw - 23.4375rem) / 51.5625);
+    }
+}
+
+@supports (width: clamp( 7.641875rem , 7.1097727273rem  +  2.2703030303vw , 8.8125rem )) {
+    .lottery-item__image {
+      width: clamp( 7.641875rem , 7.1097727273rem  +  2.2703030303vw , 8.8125rem );
+    }
+}
+
+@supports not (width: clamp( 7.641875rem , 7.1097727273rem  +  2.2703030303vw , 8.8125rem )) {
+    .lottery-item__image {
+      width: calc(7.641875rem + 1.170625 * (100vw - 23.4375rem) / 51.5625);
+    }
+}
+
+@supports (font-size: clamp( 1.5rem , 1.4431818182rem  +  0.2424242424vw , 1.625rem )) {
+    .lottery-item__price {
+      font-size: clamp( 1.5rem , 1.4431818182rem  +  0.2424242424vw , 1.625rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.5rem , 1.4431818182rem  +  0.2424242424vw , 1.625rem )) {
+    .lottery-item__price {
+      font-size: calc(1.5rem + 0.125 * (100vw - 23.4375rem) / 51.5625);
+    }
+}
+
+@supports (padding-top: clamp( 0.839375rem , 0.9302840909rem  +  -0.1212121212vw , 0.901875rem )) {
+    .lottery-item__blue-block {
+      padding-top: clamp( 0.839375rem , 0.9302840909rem  +  -0.1212121212vw , 0.901875rem );
+    }
+}
+
+@supports not (padding-top: clamp( 0.839375rem , 0.9302840909rem  +  -0.1212121212vw , 0.901875rem )) {
+    .lottery-item__blue-block {
+      padding-top: calc(0.901875rem + -0.0625 * (100vw - 23.4375rem) / 51.5625);
+    }
+}
+
+@supports (padding-right: clamp( 3.138125rem , 2.51625rem  +  2.6533333333vw , 4.50625rem )) {
+    .lottery-item__blue-block {
+      padding-right: clamp( 3.138125rem , 2.51625rem  +  2.6533333333vw , 4.50625rem );
+    }
+}
+
+@supports not (padding-right: clamp( 3.138125rem , 2.51625rem  +  2.6533333333vw , 4.50625rem )) {
+    .lottery-item__blue-block {
+      padding-right: calc(3.138125rem + 1.368125 * (100vw - 23.4375rem) / 51.5625);
+    }
+}
+
+@supports (padding-bottom: clamp( 0.5625rem , 0.7443181818rem  +  -0.2424242424vw , 0.6875rem )) {
+    .lottery-item__blue-block {
+      padding-bottom: clamp( 0.5625rem , 0.7443181818rem  +  -0.2424242424vw , 0.6875rem );
+    }
+}
+
+@supports not (padding-bottom: clamp( 0.5625rem , 0.7443181818rem  +  -0.2424242424vw , 0.6875rem )) {
+    .lottery-item__blue-block {
+      padding-bottom: calc(0.6875rem + -0.125 * (100vw - 23.4375rem) / 51.5625);
+    }
+}
+
+@supports (padding-left: clamp( 0.765625rem , 1.015625rem  +  -0.3333333333vw , 0.9375rem )) {
+    .lottery-item__blue-block {
+      padding-left: clamp( 0.765625rem , 1.015625rem  +  -0.3333333333vw , 0.9375rem );
+    }
+}
+
+@supports not (padding-left: clamp( 0.765625rem , 1.015625rem  +  -0.3333333333vw , 0.9375rem )) {
+    .lottery-item__blue-block {
+      padding-left: calc(0.9375rem + -0.171875 * (100vw - 23.4375rem) / 51.5625);
+    }
+}
+
+@supports (padding-top: clamp( 2rem , 0.7784090909rem  +  5.2121212121vw , 4.6875rem )) {
+    .onlottery-page__container {
+      padding-top: clamp( 2rem , 0.7784090909rem  +  5.2121212121vw , 4.6875rem );
+    }
+}
+
+@supports not (padding-top: clamp( 2rem , 0.7784090909rem  +  5.2121212121vw , 4.6875rem )) {
+    .onlottery-page__container {
+      padding-top: calc(2rem + 2.6875 * (100vw - 23.4375rem) / 51.5625);
+    }
+}
+
+@supports (margin-bottom: clamp( 0.9375rem , 1.0284090909rem  +  -0.1212121212vw , 1rem )) {
+    .onlottery-page__title:not(:last-child) {
+      margin-bottom: clamp( 0.9375rem , 1.0284090909rem  +  -0.1212121212vw , 1rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 0.9375rem , 1.0284090909rem  +  -0.1212121212vw , 1rem )) {
+    .onlottery-page__title:not(:last-child) {
+      margin-bottom: calc(1rem + -0.0625 * (100vw - 23.4375rem) / 51.5625);
+    }
+}
+
+@supports (margin-bottom: clamp( 0.75rem , 0.6647727273rem  +  0.3636363636vw , 0.9375rem )) {
+    .onlottery-page__items:not(:last-child) {
+      margin-bottom: clamp( 0.75rem , 0.6647727273rem  +  0.3636363636vw , 0.9375rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 0.75rem , 0.6647727273rem  +  0.3636363636vw , 0.9375rem )) {
+    .onlottery-page__items:not(:last-child) {
+      margin-bottom: calc(0.75rem + 0.1875 * (100vw - 23.4375rem) / 51.5625);
+    }
+}
+
+@supports (padding-bottom: clamp( 0.5625rem , 0.4772727273rem  +  0.3636363636vw , 0.75rem )) {
+    .onlottery-page__item {
+      padding-bottom: clamp( 0.5625rem , 0.4772727273rem  +  0.3636363636vw , 0.75rem );
+    }
+}
+
+@supports not (padding-bottom: clamp( 0.5625rem , 0.4772727273rem  +  0.3636363636vw , 0.75rem )) {
+    .onlottery-page__item {
+      padding-bottom: calc(0.5625rem + 0.1875 * (100vw - 23.4375rem) / 51.5625);
+    }
+}
+
+@supports (padding-top: clamp( 0.6875rem , 1.1420454545rem  +  -0.6060606061vw , 1rem )) {
+    .onlottery-page__item {
+      padding-top: clamp( 0.6875rem , 1.1420454545rem  +  -0.6060606061vw , 1rem );
+    }
+}
+
+@supports not (padding-top: clamp( 0.6875rem , 1.1420454545rem  +  -0.6060606061vw , 1rem )) {
+    .onlottery-page__item {
+      padding-top: calc(1rem + -0.3125 * (100vw - 23.4375rem) / 51.5625);
+    }
+}
+
+@supports (padding-left: clamp( 0.4375rem , 0.2954545455rem  +  0.6060606061vw , 0.75rem )) {
+    .onlottery-page__item {
+      padding-left: clamp( 0.4375rem , 0.2954545455rem  +  0.6060606061vw , 0.75rem );
+    }
+}
+
+@supports not (padding-left: clamp( 0.4375rem , 0.2954545455rem  +  0.6060606061vw , 0.75rem )) {
+    .onlottery-page__item {
+      padding-left: calc(0.4375rem + 0.3125 * (100vw - 23.4375rem) / 51.5625);
+    }
+}
+
+@supports (padding-right: clamp( 0.4375rem , 0.2954545455rem  +  0.6060606061vw , 0.75rem )) {
+    .onlottery-page__item {
+      padding-right: clamp( 0.4375rem , 0.2954545455rem  +  0.6060606061vw , 0.75rem );
+    }
+}
+
+@supports not (padding-right: clamp( 0.4375rem , 0.2954545455rem  +  0.6060606061vw , 0.75rem )) {
+    .onlottery-page__item {
+      padding-right: calc(0.4375rem + 0.3125 * (100vw - 23.4375rem) / 51.5625);
+    }
+}
+
+@supports (font-size: clamp( 1rem , 0.9431818182rem  +  0.2424242424vw , 1.125rem )) {
+    .onlottery-page__link {
+      font-size: clamp( 1rem , 0.9431818182rem  +  0.2424242424vw , 1.125rem );
+    }
+}
+
+@supports not (font-size: clamp( 1rem , 0.9431818182rem  +  0.2424242424vw , 1.125rem )) {
+    .onlottery-page__link {
+      font-size: calc(1rem + 0.125 * (100vw - 23.4375rem) / 51.5625);
+    }
+}
+
+@supports (width: clamp( 5.0625rem , 4.6931818182rem  +  1.5757575758vw , 5.875rem )) {
+    .onlottery-item__image {
+      width: clamp( 5.0625rem , 4.6931818182rem  +  1.5757575758vw , 5.875rem );
+    }
+}
+
+@supports not (width: clamp( 5.0625rem , 4.6931818182rem  +  1.5757575758vw , 5.875rem )) {
+    .onlottery-item__image {
+      width: calc(5.0625rem + 0.8125 * (100vw - 23.4375rem) / 51.5625);
+    }
+}
+
+@supports (height: clamp( 4.875rem , 4.4204545455rem  +  1.9393939394vw , 5.875rem )) {
+    .onlottery-item__image {
+      height: clamp( 4.875rem , 4.4204545455rem  +  1.9393939394vw , 5.875rem );
+    }
+}
+
+@supports not (height: clamp( 4.875rem , 4.4204545455rem  +  1.9393939394vw , 5.875rem )) {
+    .onlottery-item__image {
+      height: calc(4.875rem + 1 * (100vw - 23.4375rem) / 51.5625);
+    }
+}
+
+@supports (margin-bottom: clamp( 0.75rem , 0.2954545455rem  +  1.9393939394vw , 1.75rem )) {
+    .onlottery-item__image:not(:last-child) {
+      margin-bottom: clamp( 0.75rem , 0.2954545455rem  +  1.9393939394vw , 1.75rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 0.75rem , 0.2954545455rem  +  1.9393939394vw , 1.75rem )) {
+    .onlottery-item__image:not(:last-child) {
+      margin-bottom: calc(0.75rem + 1 * (100vw - 23.4375rem) / 51.5625);
+    }
+}
+
+@supports (width: clamp( 4.174375rem , 3.8223863636rem  +  1.5018181818vw , 4.94875rem )) {
+    .onlottery-item__img {
+      width: clamp( 4.174375rem , 3.8223863636rem  +  1.5018181818vw , 4.94875rem );
+    }
+}
+
+@supports not (width: clamp( 4.174375rem , 3.8223863636rem  +  1.5018181818vw , 4.94875rem )) {
+    .onlottery-item__img {
+      width: calc(4.174375rem + 0.774375 * (100vw - 23.4375rem) / 51.5625);
+    }
+}
+
+@supports (font-size: clamp( 0.75rem , 0.6931818182rem  +  0.2424242424vw , 0.875rem )) {
+    .onlottery-item__country span {
+      font-size: clamp( 0.75rem , 0.6931818182rem  +  0.2424242424vw , 0.875rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.75rem , 0.6931818182rem  +  0.2424242424vw , 0.875rem )) {
+    .onlottery-item__country span {
+      font-size: calc(0.75rem + 0.125 * (100vw - 23.4375rem) / 51.5625);
+    }
+}
+
+@supports (font-size: clamp( 1.125rem , 1.0681818182rem  +  0.2424242424vw , 1.25rem )) {
+    .onlottery-item__price {
+      font-size: clamp( 1.125rem , 1.0681818182rem  +  0.2424242424vw , 1.25rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.125rem , 1.0681818182rem  +  0.2424242424vw , 1.25rem )) {
+    .onlottery-item__price {
+      font-size: calc(1.125rem + 0.125 * (100vw - 23.4375rem) / 51.5625);
+    }
+}
+
+@supports (font-size: clamp( 0.875rem , 0.8181818182rem  +  0.2424242424vw , 1rem )) {
+    .onlottery-item__timer span {
+      font-size: clamp( 0.875rem , 0.8181818182rem  +  0.2424242424vw , 1rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.875rem , 0.8181818182rem  +  0.2424242424vw , 1rem )) {
+    .onlottery-item__timer span {
+      font-size: calc(0.875rem + 0.125 * (100vw - 23.4375rem) / 51.5625);
+    }
+}
+
+@supports (margin-bottom: clamp( 0.5rem , 0.3863636364rem  +  0.4848484848vw , 0.75rem )) {
+    .onlottery-item__timer:not(:last-child) {
+      margin-bottom: clamp( 0.5rem , 0.3863636364rem  +  0.4848484848vw , 0.75rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 0.5rem , 0.3863636364rem  +  0.4848484848vw , 0.75rem )) {
+    .onlottery-item__timer:not(:last-child) {
+      margin-bottom: calc(0.5rem + 0.25 * (100vw - 23.4375rem) / 51.5625);
     }
 }
 }
@@ -957,6 +1850,10 @@ h6 {
 }
 
 @media (any-hover: hover) {
+  .button:hover {
+    background-color: #daba08;
+  }
+
   .header-actions__item:hover {
     -webkit-box-shadow: 0 0 2px 1px #5f5f5f;
             box-shadow: 0 0 2px 1px #5f5f5f;
