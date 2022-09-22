@@ -1273,6 +1273,10 @@ h6 {
   line-height: 150%;
 }
 
+.faq-page__content {
+  padding: 0rem 0.9375rem;
+}
+
 .faq-page__title {
   font-weight: 500;
   line-height: 150%;
