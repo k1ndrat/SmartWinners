@@ -566,6 +566,7 @@ h6 {
 .section2__text2 {
   font-size: 0.8125rem;
   line-height: 162%;
+  max-width: 13.75rem;
 }
 
 .section3__title {
@@ -615,6 +616,7 @@ h6 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 0.625rem;
+  opacity: 0.8;
 }
 
 .banner-page__item {
@@ -861,7 +863,7 @@ h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 0.625rem;
+  gap: 0.9375rem;
   padding: 0rem 2.1875rem;
 }
 
@@ -995,9 +997,6 @@ h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-top: 0.9375rem;
 }
 
@@ -1008,6 +1007,9 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .left-content__cong:not(:last-child) {
@@ -1174,6 +1176,17 @@ h6 {
       -ms-grid-row-align: center;
       align-self: center;
   text-align: center;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 2.5rem;
 }
 
 .right-content__content {
@@ -1266,6 +1279,10 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
   gap: 0.3125rem;
+}
+
+.item-right__country span {
+  font-weight: 500;
 }
 
 .item-right__descr {
@@ -1779,7 +1796,7 @@ h6 {
   }
 
   .left-content__cong:not(:last-child) {
-    margin-bottom: 0.875rem;
+    margin-bottom: 0.75rem;
   }
 
   .left-content__lotto {
@@ -1894,6 +1911,10 @@ h6 {
   .left-content__subtitle {
     text-align: center;
   }
+
+  .left-content__button {
+    max-width: 18.75rem;
+  }
 }
 
 @media (max-width: 57.1875em) {
@@ -1974,6 +1995,10 @@ h6 {
     height: 3.125rem;
   }
 
+  .footer__container {
+    padding-bottom: 2.029375rem;
+  }
+
   .footer__sections {
     margin-top: 1rem;
   }
@@ -2018,6 +2043,10 @@ h6 {
     line-height: 210%;
   }
 
+  .left-content__image {
+    max-width: calc(100% + 42px);
+  }
+
   .left-content__block2 {
     max-width: 21.25rem;
   }
@@ -2030,8 +2059,12 @@ h6 {
     margin-bottom: 1rem;
   }
 
+  .left-content__link {
+    text-decoration: none !important;
+  }
+
   .left-content__button {
-    width: 14.5rem;
+    max-width: 14.5rem;
     height: 2.25rem;
   }
 
