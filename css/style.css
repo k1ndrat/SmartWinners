@@ -2830,4 +2830,12 @@ h6 {
   .item__link:hover {
     color: #013f68;
   }
+
+  .onlottery-page__link:hover {
+    color: #013f68;
+  }
+
+  .left-content__link:hover {
+    color: #013f68;
+  }
 }
