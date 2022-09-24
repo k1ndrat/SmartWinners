@@ -1357,6 +1357,51 @@ h6 {
   line-height: 133%;
 }
 
+.sect__container {
+  padding-top: 3.125rem;
+}
+
+.tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3.125rem;
+  width: 100%;
+}
+
+.tabs__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.625rem;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  border: 1px solid #5f5f5f;
+  border-radius: 0.5rem;
+}
+
+.tabs__title {
+  width: 12.5rem;
+  height: 3.125rem;
+  border-radius: 0.5rem;
+}
+
+.tabs__title._tab-active {
+  background-color: #f30000;
+  color: #fff;
+}
+
+.tabs__content {
+  border: 1px solid #5f5f5f;
+  border-radius: 0.5rem;
+  width: 100%;
+  padding: 1.5625rem;
+}
+
 @media (min-width: 23.375em) {
   .item__title {
     font-size: 1rem;
@@ -1800,6 +1845,22 @@ h6 {
   .left-content__subsubblock {
     gap: 0.25rem;
   }
+
+  .tabs__navigation {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+
+  .tabs__title {
+    width: 100%;
+  }
+
+  .tabs__content {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
 }
 
 @media (max-width: 48em) and (max-width: 20em) {
@@ -1905,11 +1966,11 @@ h6 {
 
 @media (max-width: 62.5em) {
   .menu__link {
-    font-size: 0.875rem;
+    font-size: 0.8125rem;
   }
 
   .header-bottom__account {
-    font-size: 0.875rem;
+    font-size: 0.8125rem;
   }
 }
 
