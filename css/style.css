@@ -1422,6 +1422,19 @@ h6 {
 }
 
 @media (min-width: 48.0625em) {
+  .menu__item::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    right: 0;
+    width: 1px;
+    height: 1.5rem;
+    background-color: #fff;
+  }
+
   .sect__button {
     display: none;
   }
@@ -1440,19 +1453,6 @@ h6 {
 }
 
 @media (min-width: 48em) {
-  .menu__item::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translate(0, -50%);
-        -ms-transform: translate(0, -50%);
-            transform: translate(0, -50%);
-    right: 0;
-    width: 1px;
-    height: 1.5rem;
-    background-color: #fff;
-  }
-
   .section__items-link_hidden {
     display: none;
   }
