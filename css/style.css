@@ -202,6 +202,7 @@ h6 {
 
 .header-top__logo img {
   max-width: 100%;
+  max-height: 3.75rem;
 }
 
 .header-top__text {
@@ -1414,6 +1415,12 @@ h6 {
   }
 }
 
+@media (min-width: 62.5em) {
+  .header-bottom__account {
+    height: 2.125rem;
+  }
+}
+
 @media (min-width: 48em) {
   .menu__item::after {
     content: "";
@@ -1435,7 +1442,7 @@ h6 {
 
 @media (min-width: 75em) {
   .header-top__logo {
-    width: 17.4375rem;
+    width: 17.5rem;
   }
 
   .header-bottom__account {
@@ -2139,6 +2146,10 @@ h6 {
     width: 11.375rem;
   }
 
+  .header-top__logo img {
+    height: 2.75rem;
+  }
+
   .footer {
     margin-top: 2rem;
   }
@@ -2324,15 +2335,15 @@ h6 {
 }
 
 @media (min-width: 23.4375em) and (max-width: 75em) {
-@supports (width: clamp( 11.375rem , 8.6193181818rem  +  11.7575757576vw , 17.4375rem )) {
+@supports (width: clamp( 11.375rem , 8.5909090909rem  +  11.8787878788vw , 17.5rem )) {
     .header-top__logo {
-      width: clamp( 11.375rem , 8.6193181818rem  +  11.7575757576vw , 17.4375rem );
+      width: clamp( 11.375rem , 8.5909090909rem  +  11.8787878788vw , 17.5rem );
     }
 }
 
-@supports not (width: clamp( 11.375rem , 8.6193181818rem  +  11.7575757576vw , 17.4375rem )) {
+@supports not (width: clamp( 11.375rem , 8.5909090909rem  +  11.8787878788vw , 17.5rem )) {
     .header-top__logo {
-      width: calc(11.375rem + 6.0625 * (100vw - 23.4375rem) / 51.5625);
+      width: calc(11.375rem + 6.125 * (100vw - 23.4375rem) / 51.5625);
     }
 }
 
