@@ -862,9 +862,9 @@ h6 {
   display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(9.6875rem, 13rem));
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 0.9375rem;
   padding: 0rem 2.1875rem;
 }
