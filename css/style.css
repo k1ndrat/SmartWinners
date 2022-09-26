@@ -263,9 +263,13 @@ h6 {
           align-items: center;
 }
 
+.menu__item:last-child .menu__link {
+  padding-right: 1.875rem;
+}
+
 .menu__link {
   font-weight: 500;
-  padding: 0 1.5625rem;
+  padding: 0 1.625rem;
   font-size: 1rem;
   line-height: 120%;
   text-transform: uppercase;
