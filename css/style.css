@@ -2130,6 +2130,7 @@ h6 {
 
   .left-content__image {
     max-width: calc(100% + 42px);
+    margin: 0rem -1.3125rem;
   }
 
   .left-content__block2 {
